@@ -21,11 +21,8 @@ function saveAudio() {
 function speechToText(blob){
     var blob = blob;
     var formData = new FormData();
-    var service = document.getElementById('service').value;
-    console.log('Service:' + service);
-    var model =  document.getElementById('identified').value;
     formData.append('file', blob);
-    xhrPostNoJSON('/speech?model='+model, formData, function(result){
+    xhrPostNoJSON('/speech', formData, function(result){
         if(result != null){
             displayResult(result);
         }else{
@@ -82,7 +79,6 @@ function displayResult(result){
     document.getElementById('input').value = resultado;
     stop_gif();
     
-      $('#translate').prop("disabled", false);
     
 }
 
@@ -193,8 +189,8 @@ function load_gif(element){
 }
 
 function stop_gif(){
-    var service = document.getElementById('service').value;
     $('#loaded_gif').addClass('hide');
+    $('#start').html('<i class="material-icons">mic<i>');
 }
 
 
