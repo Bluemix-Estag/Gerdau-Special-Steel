@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gerdau Special Steel</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="translucent" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="/style/style.css" />
+  <link rel="stylesheet" href="/style/materialize.min.css" />
+</head>
+
+<body id="gUMbtn">
+
+  <nav class="transparent" id="navheader">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo white-text flow-text"><img src="/images/gerdau.png" width="147" height="147" class="responsive-img"></a>
+    </div>
+  </nav>
+  <div class="main valign-wrapper">
+    <div class="row" id="content">
+      <form class="col s12">
+        <div class="row" id="main">
+          <div id="audio"></div>
+           
+          <!-- Loading -->
+          <div class="col s12 center hide" id="loader">
+            <div class="preloader-wrapper big active">
+              <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div>
+                <div class="gap-patch center">
+                  <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- --> 
+
+
+          <div class="col s12 center">
+            <img src="/images/helmet.png" width="200" />
+          </div>
+
+          <div class="row">
+            <div class="col s12 center">
+              <p class="flow-text first-response black-text" style="text-align: center;">Posso te ajudar a preencher os campos ao lado</p>
+            </div>
+            <div class="col s12 center">
+              <p class="flow-text second-response grey-text" style="text-align: center;font-size: 14pt;">O que você gostaria de preencher?</p>
+          </div>
+
+          <div class="input-field col s12" id="user">
+            <div class="col s4 offset-s4" id="text-field">
+              <input  id="input" type="text" class="validate" name="user_input">
+            </div>
+            <div class="col s4 tooltipped" style="margin-top: 2rem;" id="mic_holder">
+              <a href="#" id="start" oncontextmenu="return false;"><i class="material-icons">mic</i></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <div class="col s1 offset-s4">
+                <p class="flow-text" style="text-align:center; font-size: 14pt;"><span style="color: #004a8f">Exemplo: </span></p>
+              </div>
+              <div class="col s4">
+                <p class="flow-text" style="text-align:left; font-size: 14pt;"><span style="color: grey">Alumínio - 0,015% - 0,0018%</span></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col s12">
+            <div class="progress hide">
+              <div class="indeterminate"></div>
+            </div>
+          </div>
+          
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="page-footer  transparent flow-text " id="page-footer">
+    <div class="col s4 right" id="watson-id-logo">
+      <img src="/images/watson-logo.jpg" width="90" height="60"/>
+    </div>
+    
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="/scripts/materialize.min.js"></script>
+  <script src="/scripts/recorderWorker.js"></script>
+  <script src="/scripts/recorder.js"></script>
+  <script src="/scripts/util.js"></script>
+  <script src="/scripts/main.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/voice.js"></script>
+</body>
+
+</html>

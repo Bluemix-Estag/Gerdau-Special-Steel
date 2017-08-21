@@ -1,0 +1,72 @@
+/* style.css
+ * This file provides css styles.
+ */
+
+body,html {
+	background-color: #f9fbfe;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	font-family: Lato,sans-serif;
+	color: #283D56;
+}
+
+/* header footer common */
+header, footer {
+	width: 100%;
+	text-align: center;
+}
+
+.container {
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#content{
+	margin-top: 1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+input{
+    text-align: center !important;
+}
+
+
+.page-footer{
+	position: absolute;
+	bottom: 0;
+	height: 10%;
+	background-color: #f9fbfe;
+}
+
+#watson-id-logo{
+	margin-right: 1% !important;
+}
+
+#navheader{
+	background-color: #004a8f !important;
+}
+
+
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #0d47a1  !important;
+   }
+   
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #0d47a1 !important;
+     box-shadow: 0 1px 0 0 #000;
+   }
+

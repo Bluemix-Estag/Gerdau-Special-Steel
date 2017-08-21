@@ -1,0 +1,29 @@
+{
+    "services": {
+        "cloudantNoSQLDB": [
+      {
+        "name": "gerdau-cloudantNoSQLDB",
+        "label": "cloudantNoSQLDB",
+        "plan": "Lite",
+      "credentials": {
+        "username": "c3597df9-136e-4584-967d-26e7817f8c03-bluemix",
+        "password": "1d00b72edfa28937508d0a9a4189d0a5a8522d7e9dab5fcfc3c4d5131fd994e6",
+        "host": "c3597df9-136e-4584-967d-26e7817f8c03-bluemix.cloudant.com",
+        "port": 443,
+        "url": "https://c3597df9-136e-4584-967d-26e7817f8c03-bluemix:1d00b72edfa28937508d0a9a4189d0a5a8522d7e9dab5fcfc3c4d5131fd994e6@c3597df9-136e-4584-967d-26e7817f8c03-bluemix.cloudant.com"
+      }
+      }
+    ],
+        "conversation": [
+            {
+                "label": "conversation",
+                "name": "GerdauConversation",
+                "credentials": {
+                    "url": "https://gateway.watsonplatform.net/conversation/api",
+        "username": "cf930a20-e144-43b0-b575-8497c5228858",
+        "password": "w7YwAmeWbjjS"
+                }
+            }
+        ]
+    }
+}
